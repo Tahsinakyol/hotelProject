@@ -1,0 +1,926 @@
+/* General Style Start */
+
+/*
+        ******    *******
+          **      ** * **
+          **  **  **   **
+*/
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.row {
+  margin: 0px;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* menu start */
+.menuGenerate{
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom:1px solid #dadada;
+}
+.inItemForMenu{
+  min-height: 10px;
+}
+.logoGenerated{
+  width: 250px;
+  height:auto;
+  object-fit: contain;
+}
+.endMenuItemsGenerate{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 60px;
+  gap: 20px;
+}
+.activeMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333 !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+height: 40px;
+}
+.activeMenu::before{
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+}.pasiveMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333 !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+height: 40px;
+}
+.pasiveMenu::before{
+  width: 0%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+}
+.pasiveMenu:hover::before {
+  width: 100%;
+  transition: ease 0.5s all;
+}
+@media screen and (max-width:990px){
+  .endMenuItemsGenerate{
+    display: none;
+  }
+  .endMobileMenuOpensGenerate{
+    display: flex !important;
+  }
+  .noneMobile{
+    display: none;
+  }
+  .logoGenerated{
+    width: 150px;
+  }
+  .w49ButtonsGenerate {
+    width: 100% !important;
+  }
+}
+.endMobileMenuOpensGenerate{
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.endButton40w{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  outline: 0 !important;
+  border: none !important;
+  font-size: 16;
+}
+/* menu end */
+/* slider start */
+.sliderMain{
+  width: 100%;
+  background-size: cover;
+}
+.sliderDetailImage{
+  width: 100%;
+  height:600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sliderDetailImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.generateSliderTops{
+  width: 100%;
+  height: 100%;
+  background-color: #00000096;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderMain .slick-dots{
+  bottom: 50px;
+display: flex !important;
+justify-content: flex-end !important;
+padding: 0 25px !important;
+gap: 10px;
+}
+.sliderMain .slick-dots li button:before{
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  background-color: #fff !important;
+  content: " " !important;
+  border-radius: 10px;
+}
+.slideDetailLine{
+  width: 50%;
+  min-height: 100px;
+  background-color: #ffffff7c;
+  border-radius: 10px;
+  padding: 25px;
+}
+.searchForSlider{
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.searchForSlider input{
+  flex:1;
+  height:100%;
+  padding-left:15px;
+  outline: 0 !important;
+  border: none !important;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  
+}
+.btnSearchedInput{
+  width: 80px;
+  height: 50px;
+  background-color: #333;
+  border: none !important;
+  border-radius:10px 5px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+
+
+}
+.datePickerTopGenerate{
+  width: 49%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.inDateStyles{
+  height: 50px;
+  border: none !important;
+  outline: 0 !important;
+  background: none !important;
+  padding: 0 15px !important;
+  font-size: 18px;
+  cursor: pointer;
+}
+.datePickerContainer{
+  width: 100% !important;
+display: flex;
+background-color: #fff;
+border-radius: 5px;
+}
+@media screen and (max-width:990px){
+  .slideDetailLine{
+    width: 100% !important;
+  }
+  .btnSearchedInput{
+  position: absolute;
+  right: 0;
+  }
+  .datePickerTopGenerate{
+    width: 100%;
+  }
+}
+.textGenerate{
+  color: #333;
+  letter-spacing: 1px;
+  font-size:20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+
+}
+.dateSelectedGenerate{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.decAndInForSlider{
+  display: flex;
+  width: 100% ;
+  min-height: 10px;
+  overflow-x: hidden;
+  position: relative;
+}
+.plusMinusButtonLeft{
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 22px;
+  border: none !important;
+  outline: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}.plusMinusButtonRigh{
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 22px;
+  border: none !important;
+  outline: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.centerGerateNumber{
+  text-align: center;
+  font-size: 22px;
+  flex:1 !important;outline: 0 !important;
+  display: flex;
+  height: 50px;
+}
+.w49ButtonsGenerate{
+  width: 49%;
+}
+/* slider end */
+/* index start */
+.TextHeader_index{
+  padding: 15px 0;
+  font-size: 32px;
+  color: gray;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.hotelCard{
+  width: 100%;
+  min-height: 250px;
+  margin-bottom:25px;
+  border-radius: 10px;
+  color:#333 !important;
+  text-decoration: none !important;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.imagesHoverMain{
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+.imagesProductCardx{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+.hotelCard:hover .imagesProductCardx{
+  width: 120% !important;
+  height: 150% !important;
+  transition: ease 0.5s all;
+}
+.noneAbsHover{
+  width: 100%;
+  height: 0%;
+  background-color: #00000096;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color:#fff;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+}
+.eyeFont{
+  font-size: 32px;
+}
+.hotelCard:hover .noneAbsHover{
+  height: 100%;
+  transition: ease 0.5s all;
+
+}
+.generateDetailCardComp h1{
+  padding: 0 !important;
+  padding:  0 !important;
+  font-size: 18px;
+  color: #333 !important;
+  margin-top:10px;
+  font-weight: 700;
+}
+.generateDetailCardComp span{
+  font-size:18px;
+  color:gray;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.generateDetailCardComp{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+.spacePriceAndProsess{
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.priceCompCard{
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+.priceCompCard >span{
+  font-size: 14px !important;
+}
+.percantageClassed{
+  width: 70px;
+  height: 40px;
+  background-color: rgba(144, 238, 144, 0.591);
+  border: 1px solid green;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-weight: 600;
+  font-size:20px
+}
+/* index end */
+/* footer start */
+.footerGenerate{
+  width: 100%;
+  padding:30px  15px;
+  min-height: 10px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 35%, rgba(134,134,134,1) 100%);
+  border-top:1px solid #dadada;
+}
+.explainTextFooter{
+  font-size:16px;
+  color:#333;
+  letter-spacing:1px;
+}
+.iconsFootersAllGenerate{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+.iconsSocial{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 35%, rgba(134,134,134,1) 100%);
+  font-size:18px
+}
+.iconsSocial:hover{
+  margin-top:10px;
+  transition: ease 0.5s all;
+}
+.footerMenuLine{
+  width: 100%;
+  min-height: 10px;
+
+}
+.footerMenuLine p{
+  margin: 0;
+  padding: 0;
+  margin-bottom:10px;
+  font-weight: 700;
+  font-size:20px;
+  initial-letter: 1px;
+
+}
+.hrefFooter{
+  color:#333 !important;
+  font-size:16px;
+  text-decoration: none !important;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 10px;
+}
+.hrefFooter:last-child{
+  margin-bottom: 0 !important;
+}
+.hrefFooter:hover{
+  margin-left: 10px;
+  transition: ease 0.5s all;
+}
+/* footer end */
+/*hotel detail start*/
+.detailLineHotel{
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  padding: 15px 0;
+}
+.headerDetailName{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap:5px;
+}.headerDetailNameEnd{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:10px;
+}
+.clickedOpenImage{
+  width: 100%;
+  height: 365px;
+  position: relative;
+  margin-top: 15px;
+}.clickedOpenImageRight{
+  width: 100%;
+  height: 175px;
+  position: relative;
+  margin-top: 15px;
+}
+.leftImageGenerateDetail{
+  padding: 30px 0;
+}
+.clickedOpenImage img ,.clickedOpenImageRight img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.clickedOpenImage:hover  .noneImageGeneratew {
+  display: flex;
+  transition: ease-in 0.5s all;
+}.clickedOpenImageRight:hover  .noneImageGeneratew {
+  display: flex;
+  transition: ease-in 0.5s all;
+}
+.noneImageGeneratew{
+  background-color: #00000096;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size:32px;
+  cursor: pointer;
+}
+@media screen and (max-width:990px){
+  .leftImageGenerateDetail{
+    display: none;
+  }
+  .headerDetailNameEnd{
+    justify-content: flex-start;
+    margin-top:10px
+  }
+  .centerModalImage{
+    width: 90%;
+  }
+}
+.fixedCenter{
+  width: 100%;
+  height: 100vh;
+  background-color: #00000096;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centerModalImage{
+  width: 100%;
+  min-height: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+.centerModalImage img{
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.flexNoneModal{
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+}.flexNoneModalTopAndBottom{
+  cursor: pointer;
+  flex: 1;
+  width: 100%;
+}
+.searchLineDetailPage{
+  width: 100%;
+  min-height: 10px;
+  background-color: #524797;
+  padding: 15px 0;
+}
+.generateLineBannerSearched{
+  width: 100%;
+  min-height: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.whiteDetailPageGapsFleible{
+  flex:1;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.searchedRoomButtons{
+  width: 180px;
+  height: 70px;
+  background-color: #f6a227;
+  border: none !important;
+  clip-path: polygon(6% 0, 100% 2%, 100% 100%, 0% 100%);
+  font-size: 18px;
+  font-weight: 700;
+
+}
+.inputTopsGenerate{
+  width: 250px;
+  height: 100%;
+  border: 1px solid #dadada;
+  position: relative;
+  
+}.inputTopsGenerate_flex{
+ flex:1;
+  height: 100%;
+  border: 1px solid #dadada;
+  position: relative;
+  
+}
+.absChooseGenerate{
+  padding:2px 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -18px;
+  border: 1px solid #dadada;
+  font-size:14px;
+  font-weight: 700;
+}
+.inputGeneratedate{
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: 0 !important;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.selectedOpend{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  position: relative;
+}
+.textOpennsGeneratge{
+  font-size:16px;
+  color: #333;
+}
+.iconSelected{
+  font-size:32px
+}
+.absNumberOpendGenerate{
+  width: 100%;
+  top: 50px;
+  min-height: 100px;
+  padding: 15px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.spacesGenerated{
+  width: 100%;
+  min-height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid #dadada;
+  padding-bottom: 10px;
+}
+.iconAndTextForOpens{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+}
+.iconBigs{
+  font-size: 24px;
+}
+.numberAndPllusGenerate{
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.numberAndPllusGenerate input{
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: 0 !important;
+  text-align: center;
+}
+.plusIcons{
+  width: 40px;
+  height: 100%;
+  background: rgb(51,51,51);
+background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 35%, rgba(134,134,134,1) 100%);
+border: none !important;
+outline: 0 !important;
+display: flex;
+justify-content: flex-end;
+align-items:center ;
+position: absolute;
+right: 0;
+clip-path: polygon(25% 0, 100% 2%, 100% 100%, 0% 100%);
+color: #fff;
+padding: 0 10px;
+z-index: 35;
+}.minusIcons{
+  width: 40px;
+  height: 100%;
+  background: rgb(51,51,51);
+background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 35%, rgba(134,134,134,1) 100%);
+border: none !important;
+outline: 0 !important;
+display: flex;
+justify-content: flex-start;
+align-items:center ;
+position: absolute;
+left: 0;
+clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+
+color: #fff;
+padding: 0 10px;
+z-index: 35;
+}
+@media screen and (max-width:990px){
+  .inputTopsGenerate , .selectedOpend{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .whiteDetailPageGapsFleible{
+    flex-wrap: wrap;
+  }
+  .generateLineBannerSearched{
+    flex-direction: column;
+  }
+  .searchedRoomButtons{
+    width: 100%;
+    height: 60px;
+  }
+}
+.roomDetailHeader{
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #dadada;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.activeButtonsDetail{
+  background: none !important;
+  outline: 0 !important;
+  border: none !important;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #524797 !important;
+  font-size: 18px;
+  font-weight: 600;
+
+}.pasiveButtonsDetail{
+  background: none !important;
+  outline: 0 !important;
+  border: none !important;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #fff !important;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.detailCardGenerateText{
+  border: 1px solid #dadada;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 10px;
+  margin-bottom: 10px;
+}
+.detailCardGenerateText p{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.detailCardGenerateText span{
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.detailCardGenerateText span:last-child{
+  margin-bottom: 0 !important;
+}
+.topmr15{
+  margin-top: 15px;
+}
+.generateContentCenter{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.generateContentCenter h1{
+  color: rgb(214, 8, 8);
+  font: size 52px;
+  letter-spacing: 1px;
+}
+.generateContentCenter span{
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: gray;
+}
+/*hotel detail end*/
+/*mobile menu start*/
+.mobileMenuGenerateInde{
+  width: 100%;
+  height: 100vh;
+  background-color: #00000096;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+ display: flex;
+  justify-content: flex-end;
+}
+.mobileMenuGenerate{
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+  padding: 15px;
+}
+.leftGenerate{
+  flex:1;
+  height:"100%";
+  
+}
+.endTimesButtonsGenertate{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.iconsCenterGeneratge{
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 22px;
+}
+.MenuMobileHrefAllsOfThem{
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color:  #333 !important;
+  text-decoration: none !important;
+  font-size: 22px;
+  font-weight: 600;
+  color: gray;
+}
+/*mobile menu end*/
